@@ -10,5 +10,5 @@ gpioset --mode=exit gpiochip0 7=0
 
 # 电源绿灯
 gpioset --mode=exit gpiochip0 100=0
-gpioset --mode=exit gpiochip0 96=0
+gpioset --mode=exit gpiochip0 96=1
 echo "[Z4PRO] Done"
