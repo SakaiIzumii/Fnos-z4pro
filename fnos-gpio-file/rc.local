@@ -1,0 +1,10 @@
+#!/bin/bash
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
+echo "[Z4PRO] rc.local start"
+
+/usr/local/bin/z4pro-init.sh &
+
+echo "[Z4PRO] rc.local done"
+
+exit 0
